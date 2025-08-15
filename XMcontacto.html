@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Contacto - Xtreme Music</title>
+    <link rel="stylesheet" href="xmestilos.css">
+    <style>
+		
+        .contenedor-contacto {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto;
+            gap: 30px;
+        }
+        
+        .info-contacto, .formulario-contacto {
+            flex: 1;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .info-contacto h3 {
+            color: #939182;
+            border-bottom: 2px solid #939182;
+            padding-bottom: 10px;
+        }
+        
+        .grupo-contacto {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .icono-contacto {
+            font-size: 24px;
+            color: #7a7a6a;
+        }
+        
+        .formulario-contacto label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #939182;
+        }
+        
+        .formulario-contacto input,
+        .formulario-contacto textarea,
+        .formulario-contacto select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .formulario-contacto textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        .boton-enviar {
+            background-color: #333;
+            color: #66e600;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        .boton-enviar:hover {
+            background-color: #66e600;
+			color: #333;
+        }
+        
+        .mapa {
+            margin-top: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        @media (max-width : 1418px ){
+            .contenedor-contacto {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+		<img src="Logo Xtreme Music.png" width="180" height="180" alt=""/>
+		<nav>
+            <a href="XM.html" class="boton-cursos">Inicio</a>
+            <a href="XMcursos.html" class="boton-cursos">Cursos</a>
+            <a href="XMcontacto.html" class="boton-cursos">Contacto</a>
+        </nav>
+    </header>
+
+    <section class="contenedor-contacto">
+        <div class="info-contacto">
+            <h2>Contáctanos</h2>
+            <h3>Información de contacto</h3>
+            
+            <div class="grupo-contacto">
+                <span class="icono-contacto"> | </span>
+                <div>
+                    <strong>Dirección:</strong>
+                    <p>Av. Del Puerto 1798, 22880 Ensenada, Baja California</p>
+                </div>
+            </div>
+            
+            <div class="grupo-contacto">
+                <span class="icono-contacto"> | </span>
+                <div>
+                    <strong>Teléfono:</strong>
+                    <p>+52 646 205 3938</p>
+                </div>
+            </div>
+            
+            <div class="grupo-contacto">
+                <span class="icono-contacto"> | </span>
+                <div>
+                    <strong>Email:</strong>
+                    <p>xtrememusic@gmail.com</p>
+                </div>
+            </div>
+            
+            <div class="grupo-contacto">
+                <span class="icono-contacto"> | </span>
+                <div>
+                    <strong>Horario:</strong>
+                    <p>Lunes a Viernes: 1:00 PM - 8:00 PM<br>
+                    Sábados: 10:00 AM - 3:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="mapa">
+				
+                <img src="XMmapa.png" alt="Ubicación de Xtreme Music" style="width:100%; height:auto;">
+            </div>
+        </div>
+        
+        <div class="formulario-contacto">
+            <h3>Envíanos un mensaje</h3>
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono (opcional):</label>
+                <input type="tel" id="telefono" name="telefono">
+                
+                <label for="curso">Curso de interés:</label>
+                <select id="curso" name="curso">
+                    <option value="">Selecciona un curso</option>
+                    <option value="guitarra">Guitarra</option>
+                    <option value="bateria">Batería</option>
+                    <option value="canto">Canto</option>
+					<option value="teclado">Teclado</option>
+				 	<option value="bajo">Bajo</option>
+                    <option value="violin">Violín</option>
+					<option value="acordeon">Acordeón</option>
+                </select>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit" class="boton-enviar">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+	<nav>
+      <a href="XM.html" class="boton-cursos">Inicio</a>
+      <a href="XMcontacto.html" class="boton-cursos">Contacto</a>
+    </nav>
+    <footer>
+        <p><strong>Xtreme Music | Todos los derechos reservados. | © 2024</strong></p>
+    </footer>
+</body>
+</html>
